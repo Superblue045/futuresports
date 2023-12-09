@@ -1,7 +1,7 @@
 // Function to check if a value is a string
-const valString = (val) => {
-    return (isNaN(val));
-}
+//const valString = (val) => {
+//    return (isNaN(val));
+//}
 
 // Function to check if a value is a number
 const valNum = (val) => {
@@ -16,11 +16,11 @@ const valDate = (val) => {
 }
 
 // Function to validate a time in the format "X hour"
-const valTime = (val) => {
-    const val1 = Boolean(Number(val.split(" ")[0]));
-    const val2 = (val.split(" ")[1] === "hour");
-    return (val1 && val2);
-}
+//const valTime = (val) => {
+//   const val1 = Boolean(Number(val.split(" ")[0]));
+//  const val2 = (val.split(" ")[1] === "hour");
+// return (val1 && val2);
+//}
 
 // Function to validate a skill level (A or B)
 const valSkill = (val) => {
