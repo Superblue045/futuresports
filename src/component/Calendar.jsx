@@ -17,11 +17,14 @@ const Calendar = () => {
   ];
 
   return (
+    // Container for the calendar component
     <div className="flex items-center justify-center px-4 mx-auto lg:pt-16 lg:flex-row md:px-8" style={{ height: '50vh', margin: 0 }}>
+      {/* Section for displaying the calendar title */}
       <div className="color-gray text-center">
         <h2 className="font-sans text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none" style={{ marginTop: "20px" }}>
           Calendar of Events
         </h2>
+        {/* Iterate over each event and display its details */}
         {events.map((event, index) => (
           <div key={index} className="mb-4">
             <h3 className="text-xl font-semibold">{event.name}</h3>

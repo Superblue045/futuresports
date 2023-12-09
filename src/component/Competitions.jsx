@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+// Functional component for Competitions
 const Competitions = () => {
   const [entryData, setEntryData] = useState({
     playerName: '',
@@ -15,6 +16,8 @@ const Competitions = () => {
     message: '',
   });
 
+   // Function to handle input changes
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setEntryData({
@@ -29,6 +32,7 @@ const Competitions = () => {
     });
   };
 
+   // Function to validate form data
   const validateForm = () => {
     let valid = true;
     const newErrors = {};
@@ -58,6 +62,7 @@ const Competitions = () => {
     return valid;
   };
 
+   // Function to handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -70,6 +75,7 @@ const Competitions = () => {
     }
   };
 
+   // JSX structure for the Competitions component
   return (
     <div className="flex flex-col items-center justify-center max-w-xl mx-auto lg:pt-16 lg:flex-row md:px-8 lg:max-w-screen-xl" style={{margin: 0}}>
       <div className="mb-16 lg:mb-0 lg:max-w-lg lg:pr-5 color-gray text-center">

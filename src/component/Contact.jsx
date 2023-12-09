@@ -1,20 +1,24 @@
 import React, { useState } from 'react';
 
 const Contact = () => {
+  // State for storing form data
   const [contactData, setContactData] = useState({
     name: '',
     email: '',
     message: '',
   });
 
+  // State for storing form validation errors
   const [errors, setErrors] = useState({
     name: '',
     email: '',
     message: '',
   });
 
+  // Handle form input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
+    // Update the corresponding field in contactData
     setContactData({
       ...contactData,
       [name]: value,
@@ -27,6 +31,7 @@ const Contact = () => {
     });
   };
 
+  // Validate the form and display errors
   const validateForm = () => {
     let valid = true;
     const newErrors = {};
@@ -46,10 +51,12 @@ const Contact = () => {
       valid = false;
     }
 
+    // Update errors state and return validation status
     setErrors(newErrors);
     return valid;
   };
 
+  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -62,6 +69,7 @@ const Contact = () => {
     }
   };
 
+  // Render the Contact component
   return (
     <div className="flex flex-col justify-between max-w-xl px-4 mx-auto lg:pt-16 lg:flex-row md:px-8 lg:max-w-screen-xl">
       <div className="mb-16 lg:mb-0 lg:max-w-lg lg:pr-5">
