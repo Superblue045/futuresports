@@ -7,7 +7,7 @@ const ResultsStats = () => {
       <h2 className="font-sans text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none" style={{marginBottom: "20px"}}>
       Results & Statistics
         </h2>
-      <iframe src="https://iframes.leagues.tennis.com.au/3599/league_20498.html" width="100%" height="600px" frameBorder="0"></iframe>
+      <iframe title={'Results'} src="https://iframes.leagues.tennis.com.au/3599/league_20498.html" width="100%" height="600px" frameBorder="0"></iframe>
       </div>
     </div>
   )
