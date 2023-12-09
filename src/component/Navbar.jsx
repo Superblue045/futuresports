@@ -6,7 +6,7 @@ const Navbar = (props) => {
     const [searchKey, setSearchKey] = useState("");
 
     const showProfileLoginHandle =()=> {
-        const name = prompt("What is your name");
+        const name = prompt("What is your name (Choose Steven or Mary)");
         const username = prompt("Enter Username - ie email@domain.com:");
         const password = prompt("Enter password:");
         
